@@ -55,6 +55,9 @@
   tags:
     - app
 
+- name: chdir
+  command: "cd {{ duffy_app_basedir }}"
+
 - name: Install via poetry
   command: "{{ duffy_python_venv_path }}/bin/poetry install"
   args:
